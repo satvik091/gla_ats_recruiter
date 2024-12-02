@@ -70,7 +70,7 @@ def main():
     st.title("📄 Resume Ranking Application")
 
     # Job Description PDF Upload
-    st.header("1. Upload Job Description PDF")
+    st.header("Upload Job Description PDF")
     job_description_pdf = st.file_uploader("Choose job description PDF",
                                            type=['pdf'],
                                            key="job_desc_upload")
@@ -82,7 +82,7 @@ def main():
         st.text_area("Extracted Job Description", value=job_description, height=200)
 
     # Resume PDF Upload
-    st.header("2. Upload Resume PDFs")
+    st.header("Upload Resume PDFs")
     uploaded_resumes = st.file_uploader("Choose resume PDF files",
                                         type=['pdf'],
                                         accept_multiple_files=True,
@@ -108,7 +108,7 @@ def main():
             df_sorted = df.sort_values('Match Score', ascending=False)
 
             # Display results
-            st.header("3. Resume Ranking Results")
+            st.header("Resume Ranking Results")
             st.dataframe(df_sorted, use_container_width=True)
 
             # Highlight top candidates
