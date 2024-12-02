@@ -14,6 +14,8 @@ if not GOOGLE_API_KEY:
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
+st.set_page_config(page_title="GLA Recruiter-Based Resume Ranking App", page_icon=":guardsman:")
+
 def extract_text_from_pdf(pdf_file):
     """
     Extract text from PDF file
