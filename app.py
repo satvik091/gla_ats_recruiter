@@ -7,7 +7,7 @@ from typing import List, Dict
 import pandas as pd
 
 # Configuration for Gemini API
-GOOGLE_API_KEY = ("AIzaSyBGKcyTyznlGzbPuivbcnU3fVgJVrUl_24")
+GOOGLE_API_KEY = ("AIzaSyBPDNB9oDlVpJlTdEkEnc7vWv_CsAZiVQ0")
 if not GOOGLE_API_KEY:
     st.error("Please set GOOGLE_API_KEY in Streamlit secrets")
     st.stop()
